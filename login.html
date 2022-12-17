@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 350px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        padding: 15px;
+        border:1px solid skyblue;
+        border-radius: 5px;
+
+    }
+    input{
+        margin: 5px 0px;
+        height: 35px;
+        padding: 5px;
+    }
+    button{
+        height: 35px;
+        margin-top: 5px 0px;
+        background-color: aqua;
+        border: none;
+        border-radius: 5px;
+        color: antiquewhite;
+    }
+    button:hover{
+        background-color: blueviolet;
+        color: azure;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="container" > 
+        <input type="email"
+        placeholder="email" required>
+        <input type="password"
+        placeholder="password" required>
+        <button onclick="ok()">login</button>
+
+    </div>
+</body>
+</html>
+<script>
+    function ok() {
+        window.location.href="workycom.html"
+    }
+</script>
