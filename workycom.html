@@ -11,7 +11,6 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
 
         #nav {
@@ -70,6 +69,7 @@
             box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
             text-align: center;
             justify-content: center;
+            padding-top: 10px;
         }
 
         #card>img {
@@ -79,34 +79,24 @@
         }
 
         #project>div {
+            padding-top: 20px;
             display: grid;
             grid-template-columns: repeat(6, 1fr);
             width: 100%;
             height: 20%;
             gap: 20px;
-            margin: 20px auto;
-            justify-content: center;
+            margin: auto;
+         box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+        }
+        #project>div:hover{
+            background-color: aqua;
+            color: #000;
+        }
+        #project>div:hover  h3{
+            background-color: antiquewhite;
 
         }
-
-        #project>div>div {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 1px 1px 10px 0px rgb(0 0 0 / 20%);
-        }
-        #project>div>div>img{
-            width: 100%;
-        }
-
-        /* #project>div>img {
-            display: grid;
-            grid-template-columns: repeat(6,1fr);
-            width:100%;
-            height: 50%;
-        } */
+/*   */
     </style>
 </head>
 
@@ -137,8 +127,7 @@
         <h5>Resorces</h5>
         <h5>Pricing</h5>
         <h5>Contact Sales</h5>
-        <button href="create a new account.html">create new account</button>
-        <button onclick="login()" href="login.html"> Sign in</button>
+       
     </div>
     <div id="container">
         <img src="https://www.bing.com/images/blob?bcid=S4LoZKzIqwMFxrBIFjSqXA61aazO.....0M">
@@ -148,89 +137,139 @@
             <div>
                 <img width="30%"
                     src="https://thumbs.dreamstime.com/z/contact-sales-rubber-stamp-grunge-design-dust-scratches-effects-can-be-easily-removed-clean-crisp-look-color-easily-84404906.jpg">
-                <h4>Every day, we help organizations find smarter, faster, better ways to work.
-                    Contact sales and see how our digital experiences can help you overcome your biggest challenges.
-                </h4>
+                    <h4>Every day, we help organizations find smarter, faster, better ways to work.
+                        Contact sales and see how our digital experiences can help you overcome your biggest challenges.</h4>
             </div>
         </div>
         <div>
             <div>
 
-                <img width="30%" src="https://th.bing.com/th/id/OIP.OyogUAfzH6dv578h8_DTSgHaH0?pid=ImgDet&rs=1">
-                <h4>24/7 support is a kind of support that is available throughout the day, 7 days a week and 365 days a
-                    year. </h4>
+                <img width="30%"
+                    src="https://th.bing.com/th/id/OIP.OyogUAfzH6dv578h8_DTSgHaH0?pid=ImgDet&rs=1">
+                    <h4>24/7 support is a kind of support that is available throughout the day, 7 days a week and 365 days a year. </h4>
             </div>
         </div>
         <div>
             <div>
                 <img width="30%"
                     src="https://d2x3xhvgiqkx42.cloudfront.net/12345678-1234-1234-1234-1234567890ab/8769cf44-f342-494c-b25f-cc98c9da3e82/2020/11/21/83511f25-ecf9-4ba6-9510-d0902f235d09/9350efa5-c6e4-419d-899a-85b8cec71574.png">
-                <h4>The Pricing Plans app gives you the flexibility to create the types of plans that suit your
-                    business. </h4>
+                    <h4>The Pricing Plans app gives you the flexibility to create the types of plans that suit your business. </h4>
             </div>
         </div>
     </div>
 
-    <div id="project">
-        <div>
+        <div id="project">
             <div>
-                <img
-                    src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/wm_main_logo.png">
-                <p>For professionals and teams managing tasks & workflows
-                    Manage tasks and workflows to fuel team collaboration and productivity at scale.
-                </p>
-            </div>
-            <div>
-                <img
-                    src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/crm_main_logo.png">
-                <p>For professionals and teams managing tasks & workflows
-                    Manage tasks and workflows to fuel team collaboration and productivity at scale.
-                </p>
-            </div>
-            <div>
+                <div>
+                    <img width="70%"
+                        src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/wm_main_logo.png">
+                    <p>For professionals and teams managing tasks & workflows
+                        Manage tasks and workflows to fuel team collaboration and productivity at scale.
+                    </p>
+                </div>
+                <div>
+                    <img width="70%"
+                        src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/crm_main_logo.png">
+                    <p>For professionals and teams managing tasks & workflows
+                        Manage tasks and workflows to fuel team collaboration and productivity at scale.
+                    </p>
+                </div>
+                <div>
 
-                <img
-                    src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/wm_main_logo.png">
-                <p>For professionals and teams managing tasks & workflows
-                    Manage tasks and workflows to fuel team collaboration and productivity at scale.
-                </p>
+                    <img width="70%"
+                        src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/wm_main_logo.png">
+                    <p>For professionals and teams managing tasks & workflows
+                        Manage tasks and workflows to fuel team collaboration and productivity at scale.
+                    </p>
+                </div>
+                <div>
+                    <img width="70%"
+                        src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/projects_main_logo.png">
+                    <p>For professionals and teams managing tasks & workflows
+                        Manage tasks an5 workflows to fuel team collaboration and productivity at scale.
+                    </p>
+                </div>
+                <div>
+                    <img width="70%"
+                        src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/wm_main_logo.png">
+                    <p>For professionals and teams managing tasks & workflows
+                        Manage tasks and workflows to fuel team collaboration and productivity at scale.
+                    </p>
+                </div>
+                <div>
+                    <img width="70%"
+                        src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/wm_main_logo.png">
+                    <p>For professionals and teams managing tasks & workflows
+                        Manage tasks and workflows to fuel team collaboration and productivity at scale.
+                    </p>
+                </div>
+                
             </div>
-            <div>
-                <img
-                    src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/projects_main_logo.png">
-                <p>For professionals and teams managing tasks & workflows
-                    Manage tasks an5 workflows to fuel team collaboration and productivity at scale.
-                </p>
+            <div id="footer">
             </div>
-            <div>
-                <img
-                    src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/wm_main_logo.png">
-                <p>For professionals and teams managing tasks & workflows
-                    Manage tasks and workflows to fuel team collaboration and productivity at scale.
-                </p>
-            </div>
-            <div>
-                <img
-                    src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/wm_main_logo.png">
-                <p>For professionals and teams managing tasks & workflows
-                    Manage tasks and workflows to fuel team collaboration and productivity at scale.
-                </p>
-            </div>
-        </div>
-        <div id="footer">
-        </div>
-        <div id="footer_child>"></div>
-        <ul>
-            <ol></ol>
+            <div id="footer_child>">
+            <ul>
+                <h3>Worky.com</h3>
+
+                <ol>pricing</ol>
+                <ol>contact</ol>
+                <ol>template</ol>
+                <ol>sbm</ol>
+                <ol>interprizing</ol>
+                <ol>Apps marketing</ol>
+                <ol>24/7</ol>
+                
+            </ul>
+            <ul>
+            <h3>feature</h3>
+            
+                <ol>Docs</ol>
+                <ol>integration</ol>
+                <ol>Automatic</ol>
+                <ol>Files</ol>
+                <ol>Dashboard</ol>
+                <ol>konbon</ol>
+                <ol>Gant</ol>
+            </ul>
+            <ul>
+            <h3>worky product</h3>
+            <ol> worky crm</ol>
+            <ol>worky market</ol>
+            <ol>worky projct</ol>
+            <ol>worky dev</ol>
+            <ol>worky products </ol>
+            <ol>worky canvas</ol>
+            <ol>worky form</ol>
         </ul>
-
+        <ul>
+        <h3>Use cases</h3>
+        <ol>marketing </ol>
+        <ol>project sales</ol>
+        <ol>devloper</ol>
+            <ol>hr</ol>
+            </ul>
+            <ul>
+            <h3>Company</h3>
+            <ol>about us</ol>
+            <ol>contact</ol>
+            <ol>Carrier</ol>
+            <ol>worky u</ol>
+            <ol>professionals</ol>
+            <ol>digital life</ol>
+            <ol>investor</ol>
+        </ul>
+        <ul>
+        <h3>Resorces</h3>
+        <ol>help us</ol>
+        <ol>community</ol>
+        <ol>blog</ol>
+        <ol>webinar</ol>
+        <ol>Event</ol>
+        <ol>App Devloper</ol>
+        <ol>Compare</o>
+            </ol>
+        </ul>
+    <!-- </div> -->
 </body>
 
 </html>
-<script>
-    function login() {
-        window.location.href = "login.html"
-
-
-    }
-</script>

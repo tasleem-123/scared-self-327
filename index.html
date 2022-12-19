@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> WorkyMain page</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    #nav {
+        background-color: white;
+        height: 70px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        padding: 0 20px;
+    }
+
+    #nav select {
+        border: none;
+        outline: none;
+        color: #898989;
+        font-weight: 500;
+    }
+
+    .nav-left {
+        display: flex;
+        gap: 30px;
+    }
+
+    .nav-right {
+        display: flex;
+        flex-grow: 2;
+        justify-content: right;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .nav-right h5 {
+        color: #898989;
+        font-weight: 500;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .logo img {
+        height: 100%;
+        border-radius: 8px;
+    }
+
+    #nav>select {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: azure;
+    }
+
+    #nav>h5 {
+        background-color: rgb(234, 226, 229);
+
+    }
+
+    #nav>select:hover {
+        background-color: black;
+        color: white;
+    }
+
+    #container {
+        background: linear-gradient(rgb(0, 1, 51) 0%, rgb(15, 16, 72) 100%);
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+        color: white;
+
+    }
+
+    #con h1 {
+        padding: 30px 0;
+        font-size: 52px;
+    }
+
+    #con h1 {
+        font-size: 24px;
+    }
+
+    #middle {
+        width: 80%;
+        height: 150px;
+        /* border-radius: 3px solid red; */
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 30px auto;
+    }
+
+    #middle-1 {
+        height: 120px;
+        width: 120px;
+        border: 1px solid white;
+        border-radius: 8px;
+        padding: 5px;
+    }
+
+    #middle-1>h2 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    #middle-1:hover {
+        border: 2px solid rgb(131, 255, 243);
+    }
+
+    #middle>div>img {
+        height: 50px;
+        text-align: left;
+
+    }
+
+    #b {
+        padding: 10px 25px;
+        background: linear-gradient(45deg, blue, white);
+        border-radius: 35px;
+        color: white;
+        background-size: 200%;
+    }
+    .nav-button {
+        padding: 10px 25px;
+    background: linear-gradient(45deg, black, white);
+    border-radius: 35px;
+    color: white;
+    background-size: 200%;
+    font-weight: 600;
+    border: none;
+    }
+
+    .brand-cont {
+        display: flex;
+        height: 50px;
+        justify-content: center;
+        gap: 25px;
+        margin: 50px 0;
+
+    }
+
+    #h:hover {
+        background-color: aqua;
+        color: aliceblue;
+        border: 2px solid yellow
+    }
+
+    #box img {
+        width: 100%;
+    }
+
+    h2 {
+        text-align: center;
+
+    }
+
+    h2:hover {
+        background-color: black;
+        color: bisque;
+
+    }
+
+    #brand {
+        height: 100%;
+        width: 350px;
+        display: grid;
+        margin: auto;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 30px;
+        /* border: 3px solid red; */
+        background-color: rgb(177, 176, 182);
+        /* font-size: small;
+        border: radius 50px;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
+
+    }
+
+    #brand>div {
+        height: 100%;
+        width: 10%;
+        background-color: blue;
+        font-size: small;
+        border-radius: 70px;
+    }
+    .h1{
+        display: flex;
+        flex-grow: 1;
+        justify-content: right ;
+        gap: 20px;
+        align-items: center;
+    }
+        .h2 {
+        display: flex;
+        gap: 30px;
+}
+#c {
+        padding: 10px 25px;
+        background: linear-gradient(45deg, blue, white);
+        border-radius: 35px;
+        color: white;
+        background-size: 200%;
+}
+/* #task{
+    width:300%;
+    background-color: black;
+}
+#task>img{
+    width: auto;
+} */
+#task>img{
+    width: 100%;
+}
+.overview{
+    display:flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 255, 0.381);
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    gap: 10px;
+
+}
+#project>div {
+            padding-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            width: 100%;
+            height: 20%;
+            gap: 20px;
+            margin: auto;
+         box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+#project>div:hover{
+            background-color: rgb(15, 16, 16);
+            color: #000;
+        }
+        #project>div:hover  h3{
+            background-color: antiquewhite;
+
+        }
+        #m{
+            padding: 10px 25px;
+        background: linear-gradient(45deg, rgb(5, 5, 225), rgb(18, 0, 0));
+        border-radius: 35px;
+        color: rgb(255, 255, 255);
+        /* background-size: 20%; */
+        }
+
+
+
+
+</style>
+
+<body>
+    <div id="nav">
+        <div class="logo">
+            <img src="logoworky.png" alt="">
+        </div>
+        <div class="nav-left">
+            <select id="Uses cases">
+                <option value="Uses cases">Uses cases</option>
+                <option value="Work Managment">Work Managment</option>
+                <option value="Sales Crm">Sales Crm</option>
+                <option value="Dev">Dev</option>
+            </select>
+            <select id="Customers">
+                <option value="Customers">Customers</option>
+                <option value="key future">key future</option>
+                <option value="integration">integration</option>
+                <option value="add-ones">add</option>
+            </select>
+            <select id="PlateForms">
+                <option value="PlateForms">PlateForms</option>
+                <option value="Zippo">Zippo</option>
+                <option value="software">software</option>
+                <option value="fare-tech">fare-tech</option>
+            </select>
+            <select id="PlateForms">
+                <option value="Resorces">Resorces</option>
+            </select>
+            <h5></h5>
+        </div>
+        <div class="nav-right">
+            <h5>Pricing</h5>
+            <h5>Contact Sales</h5>
+            <button class="nav-button" href="create a new account.html">create new account</button>
+            <button class="nav-button" onclick="login()" href="login.html"> Sign in</button>
+            <button class="nav-button">Get Started</button>
+        </div>
+    </div>
+    <div id="container">
+
+        <div id="con">
+            <h1>A plateform built for a new way of working</h1>
+            <p>What Would you loke to manage with worky.com</p>
+        </div>
+        <div id="middle">
+            <div id="middle-1">
+                <img
+                    src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/first_fold/icons/it_icon.png">
+                <h2>task managment</h2>
+
+            </div>
+            <div id="middle-1">
+                <img
+                    src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/first_fold/icons/marketing_icon.png">
+                <h2>software devlopment</h2>
+
+            </div>
+            <div id="middle-1">
+                <img
+                    src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/first_fold/icons/crm_icon.png">
+                <h2>marketing</h2>
+
+            </div>
+            <div id="middle-1">
+                <img
+                    src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/first_fold/icons/pmo_icon.png">
+                <h2>project managment</h2>
+
+            </div>
+            <div id="middle-1">
+                <img
+                    src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/first_fold/icons/dev_icon.png">
+                <h2>sale</h2>
+
+            </div>
+            <div id="middle-1">
+                <img
+                    src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/first_fold/icons/task_icon.png">
+                <h2>CRM</h2>
+
+            </div>
+            <div id="middle-1">
+                <img
+                    src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/first_fold/icons/hr_icon.png">
+                <h2>task-manager</h2>
+
+            </div>
+            <div id="middle-1">
+                <img
+                    src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/first_fold/icons/operations_icon.png">
+                <h2>opration</h2>
+
+            </div>
+        </div>
+
+        <button id="b">Get Started</button>
+
+
+        <div id="box">
+
+            <div>
+                <img
+                    src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/first_fold/image.png">
+
+            </div>
+        </div>
+    </div>
+
+
+    <h2>Trusted by 152,000+ customers worldwide</h2>
+
+    <div class="brand-cont">
+
+        <img
+            src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/hulu.png">
+
+        <img
+            src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/bd.png">
+
+        <img
+            src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/canva.png">
+        <img
+            src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/nhl.png">
+        <img
+            src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/coca_cola.png">
+
+        <img
+            src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/hubspot.png">
+
+
+        <img
+            src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/Electronic_Arts.png">
+
+        <img
+            src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/nautica.png">
+
+        <img
+            src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/universal.png">
+    </div>
+    <div>
+        <div class="h1">
+            <h1>The Work OS that lets you
+                shape workflows</h1>
+        <div class="h2">
+    <h2>Boost your teams alignment, efficiency, and productivity 
+        by customizing any workflow to fit your needs.</h2>
+        <button id="c">Get Started</button>
+    </div>
+    </div>
+<div id="task">
+    <img src="https://www.bing.com/images/blob?bcid=S8vRBhzK5QUFxrBIFjSqXA61aazO.....9U" alt="">
+</div>
+<div>
+    <div class="overview">
+        <img width="10%" src="https://dapulse-res.cloudinary.com/image/upload/r_400/f_auto,q_auto/remote_mondaycom_static/uploads/BarBen/sarah.jpeg">
+        <h1>streamline work for</h1>
+        <h1>maximum productivity</h1>
+        <p>centralise your work process tools</p>
+        <p>use case opurtunities for the plate form</p>
+
+
+        <!-- <img src="https://dapulse-res.cloudinary.com/image/upload/r_400/f_auto,q_auto/remote_mondaycom_static/uploads/BarBen/sarah.jpeg">
+
+        <h2>bring team to Drive</h2>
+        <h2> the bussines impact of the work</h2> -->
+
+
+        <img width="10%"src="https://dapulse-res.cloudinary.com/image/upload/r_400/f_auto,q_auto/remote_mondaycom_static/uploads/BarBen/baptiste.jpeg">
+        <h1> staye on track too</h1>
+        <h1> to reach the goel faster</h1>
+        <button id="m">go to my account</button>
+    
+</div>
+<div id="project">
+    <div>
+        <div>
+            <img width="70%"
+                src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/wm_main_logo.png">
+            <p>For professionals and teams managing tasks & workflows
+                Manage tasks and workflows to fuel team collaboration and productivity at scale.
+            </p>
+        </div>
+        <div>
+            <img width="70%"
+                src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/crm_main_logo.png">
+            <p>For professionals and teams managing tasks & workflows
+                Manage tasks and workflows to fuel team collaboration and productivity at scale.
+            </p>
+        </div>
+        <div>
+
+            <img width="70%"
+                src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/wm_main_logo.png">
+            <p>For professionals and teams managing tasks & workflows
+                Manage tasks and workflows to fuel team collaboration and productivity at scale.
+            </p>
+        </div>
+        <div>
+            <img width="70%"
+                src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/projects_main_logo.png">
+            <p>For professionals and teams managing tasks & workflows
+                Manage tasks an5 workflows to fuel team collaboration and productivity at scale.
+            </p>
+        </div>
+        <div>
+            <img width="70%"
+                src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/wm_main_logo.png">
+            <p>For professionals and teams managing tasks & workflows
+                Manage tasks and workflows to fuel team collaboration and productivity at scale.
+            </p>
+        </div>
+        <div>
+            <img width="70%"
+                src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/wm_main_logo.png">
+            <p>For professionals and teams managing tasks & workflows
+                Manage tasks and workflows to fuel team collaboration and productivity at scale.
+            </p>
+        </div>
+    </div>
+    <div id="footer">
+    </div>
+    <div id="footer_child>">
+    <ul>
+        <h3>Worky.com</h3>
+
+        <ol>pricing</ol>
+        <ol>contact</ol>
+        <ol>template</ol>
+        <ol>sbm</ol>
+        <ol>interprizing</ol>
+        <ol>Apps marketing</ol>
+        <ol>24/7</ol>
+        
+    </ul>
+    <ul>
+    <h3>feature</h3>
+    
+        <ol>Docs</ol>
+        <ol>integration</ol>
+        <ol>Automatic</ol>
+        <ol>Files</ol>
+        <ol>Dashboard</ol>
+        <ol>konbon</ol>
+        <ol>Gant</ol>
+    </ul>
+    <ul>
+    <h3>worky product</h3>
+    <ol> worky crm</ol>
+    <ol>worky market</ol>
+    <ol>worky projct</ol>
+    <ol>worky dev</ol>
+    <ol>worky products </ol>
+    <ol>worky canvas</ol>
+    <ol>worky form</ol>
+</ul>
+<ul>
+<h3>Use cases</h3>
+<ol>marketing </ol>
+<ol>project sales</ol>
+<ol>devloper</ol>
+    <ol>Hr</ol>
+    </ul>
+    <ul>
+    <h3>Company</h3>
+    <ol>about us</ol>
+    <ol>contact</ol>
+    <ol>Carrier</ol>
+    <ol>worky u</ol>
+    <ol>professionals</ol>
+    <ol>digital life</ol>
+    <ol>investor</ol>
+</ul>
+<ul>
+<h3>Resorces</h3>
+<ol>help us</ol>
+<ol>community</ol>
+<ol>blog</ol>
+<ol>webinar</ol>
+<ol>Event</ol>
+<ol>App Devloper</ol>
+<ol>Compare</o>
+    </ol>
+</ul>
+
+
+
+
+
+</body>
+
+</html>
+<script>
+    function login() {
+        window.location.href="login.html"
+        
+        
+    }
+</script>
